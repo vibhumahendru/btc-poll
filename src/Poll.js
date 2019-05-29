@@ -14,7 +14,7 @@ class Poll extends Component {
   }
 
   componentDidMount(){
-    fetch('http://localhost:3000/votes')
+    fetch('https://dashboard.heroku.com/apps/voting-btc/logs')
     .then(res => res.json())
     .then((votes) => {
         this.setState({
