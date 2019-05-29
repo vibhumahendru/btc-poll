@@ -78,7 +78,7 @@ class Poll extends Component {
     return (
       <div>
         {!this.state.justVoted ? <Voting handleSubmitVote={this.handleSubmitVote} handleSelectCategory={this.handleSelectCategory} selectedCategory={this.state.selectedCategory}/> : <Stats sortedVotes={this.state.sortedVotes} allVotes={this.state.allVotes}/>}
-        {this.state.justVoted ? <button onClick={this.handleResetJustVoted}>Reset</button> :null}
+        {this.state.justVoted ? <button class="btn btn-primary" onClick={this.handleResetJustVoted}>Reset</button> :null}
       </div>
     );
   }
