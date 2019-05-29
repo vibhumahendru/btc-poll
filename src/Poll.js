@@ -33,7 +33,7 @@ class Poll extends Component {
   }
 
   handleSubmitVote=()=>{
-    fetch('http://localhost:3000/votes', {
+    fetch('https://voting-btc.herokuapp.com/votes', {
       method:'POST',
       headers:{
           'Accept': 'application/json',
